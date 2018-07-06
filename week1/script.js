@@ -1,10 +1,10 @@
 //1
-console.log("Привет мир!");
-console.log("Hello world!");
+console.log("Привет мир!" + '\n' +
+            "Hello world!");
 
 //2
-console.log("I'm awesome");
-// console.log('I\'m awesome');
+console.log("I'm awesome" + "\n" +
+           "or " + 'I\'m awesome' + '😀');
 
 //3
 var x;
@@ -27,17 +27,17 @@ var z = 7.25;
 console.log(z);
 var a = Math.round(z);
 console.log(a);
-console.log(Math.max(z, a));
+console.log("🏆 The winner is: " + Math.max(z, a));
 
 //6
 var animals = [];
 var mypets = [{
-	1: "Cat",
-	2: "Dog",
-	3: "Mouse"
+	1: "🐈Cat",
+	2: "🐤Bird",
+	3: "🐁Mouse"
 }];
 var danspets = [{
-	1: 'baby pig'
+	1: '🐖baby pig'
 }];
 animals.push(mypets, danspets);
 console.log(animals);
@@ -46,7 +46,7 @@ console.log(animals);
 //console.log(animals);
 
 //7
-let myString = "this,is,a,test";
+let myString = "this is a test";
 console.log(myString);
 console.log(myString.length);
 
@@ -59,7 +59,7 @@ let second = ('value');
 console.log('the value of the variable second is: ' + second);
 console.log('I think the type of the variable second is string.');
 console.log(typeof second);
-let third = 'foobar';
+let third = 'foobar🍺';
 console.log('the value of the variable third is: ' + third);
 console.log('I think the type of the variable third is string.');
 console.log(typeof third);
@@ -73,14 +73,49 @@ console.log(typeof fourth);
 //} else {
 //      console.log('variables are not the same');
 //}
-var compare = [typeof second];
-if (compare.indexOf(typeof third) >= 0) {
-	console.log('variables are the same');
-} else {
-	console.log('variables are different');
-}
+//var compare = [typeof second];
+//if (compare.indexOf(typeof third) >= 0) {
+//	console.log('variables are the same');
+//} else {
+//	console.log('variables are different');
+//}
 //indexOf() compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator).
-//deep multiple values diff checker???
+var a = typeof (first);
+var b = typeof (second);
+var c = typeof (third);
+var d = typeof (fourth);
+console.log("Same variables search. Initialization...");
+if ([a].indexOf(b) >= 0){
+  console.log('❤ a & b the same');
+} else {
+  console.log('a & b not the same');
+}
+if ([a].indexOf(c) >= 0){
+  console.log('❤ a & c the same');
+} else {
+  console.log('a & c not the same');
+}
+if ([a].indexOf(d) >= 0){
+  console.log('❤ a & d the same');
+} else {
+  console.log('a & d not the same');
+}
+if ([b].indexOf(c) >= 0){
+  console.log('❤ b & c the same');
+} else {
+  console.log('b & c not the same');
+}
+if ([b].indexOf(d) >= 0){
+  console.log('❤ b & d the same');
+} else {
+  console.log('b & d not the same');
+}
+if ([c].indexOf(d) >= 0){
+  console.log('❤ c & d the same');
+} else {
+  console.log('c & d not the same');
+}
+//make it visually more intuitive with emodji
 
 //9
 //The modulus operator (%) returns the division remainder.
@@ -111,16 +146,16 @@ console.log(remainder3);
 var drugs = 1004;
 var rockandroll = 935;
 whatislove = drugs % rockandroll;
-console.log(whatislove);
+console.log('🤡 ' + whatislove);
 //wolframalpha.com/input/?i=QuotientRemainder%5B1004,935%5D
 
 //10
-var multipleTypes = ['noproblem', 0];
+var multipleTypes = ['(╯°□°）╯︵ ┻━┻', 111000];
 console.log(multipleTypes);
 var x = 6 / 0;
 var y = 10 / 0;
 if (x === y) {
-	console.log('same');
+	console.log("❤ can't divide to zero, but I say we are the same " + x + '=' + y);
 } else {
-	console.log('not the same');
+	console.log('cant calculate');
 }

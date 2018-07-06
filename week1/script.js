@@ -128,24 +128,22 @@ var x = 7;
 x = x % 3;
 console.log(x);
 //wolframalpha.com/input/?i=QuotientRemainder%5B7,3%5D
-var dividend1 = 202;
-var divisor1 = 10;
-remainder1 = dividend1 % divisor1;
-console.log(remainder1);
+var dividend = 202;
+var divisor = 10;
+var remainder = dividend % divisor;
+console.log(remainder);
 //wolframalpha.com/input/?i=QuotientRemainder%5B202,10%5D
-var dividend2 = 55;
-var divisor2 = 35;
-remainder2 = dividend2 % divisor2;
-console.log(remainder2);
+var dividend = 55;
+var divisor = 35;
+var remainder = dividend % divisor;
+console.log(remainder);
 //wolframalpha.com/input/?i=QuotientRemainder%5B55,35%5D
-var dividend3 = 999;
-var divisor3 = 666;
-remainder3 = dividend3 % divisor3;
-console.log(remainder3);
+var remainder = 999 % 666;
+console.log(remainder);
 //wolframalpha.com/input/?i=QuotientRemainder%5B999,666%5D
 var drugs = 1004;
 var rockandroll = 935;
-whatislove = drugs % rockandroll;
+var whatislove = drugs % rockandroll;
 console.log('🤡 ' + whatislove);
 //wolframalpha.com/input/?i=QuotientRemainder%5B1004,935%5D
 
@@ -155,7 +153,7 @@ console.log(multipleTypes);
 var x = 6 / 0;
 var y = 10 / 0;
 if (x === y) {
-	console.log("❤ can't divide to zero, but I say we are the same " + x + '=' + y);
+	console.log("❤ can't divide by zero, but I say we are the same " + x + '=' + y);
 } else {
 	console.log('cant calculate');
 }

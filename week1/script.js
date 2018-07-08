@@ -1,5 +1,5 @@
 //1
-console.log("Привет мир!" + '\n' +
+console.log("Привет мир!" + "\n" +
             "Hello world!");
 
 //2
@@ -40,26 +40,26 @@ console.log(myString.length);
 
 //8
 let first = 1;
-console.log('the value of the variable first is: ' + first);
+console.log("the value of the variable first is: " + first);
 console.log('I think the type of the variable first is number.');
 console.log(typeof first);
 let second = ('value');
-console.log('the value of the variable second is: ' + second);
+console.log("the value of the variable second is: " + second);
 console.log('I think the type of the variable second is string.');
 console.log(typeof second);
-let third = 'foobar';
-console.log('the value of the variable third is: ' + third);
-console.log('I think the type of the variable third is string.');
+let third = "foobar";
+console.log("the value of the variable third is: " + third);
+console.log("I think the type of the variable third is string.");
 console.log(typeof third);
 let fourth = [1, 2, 3, 4, 5];
-console.log('the value of the variable fourth is: ' + fourth);
-console.log('I think the type of the variable fourth is object.');
+console.log("the value of the variable fourth is: " + fourth);
+console.log("I think the type of the variable fourth is object.");
 console.log(typeof fourth);
 
 if (typeof first === typeof second) {
-    console.log('variables are the same');
+    console.log("variables are the same");
 } else {
-      console.log('variables are not the same');
+      console.log("variables are not the same");
 }
 
 //9
@@ -92,7 +92,7 @@ console.log(multipleTypes);
 var x = 6 / 0;
 var y = 10 / 0;
 if (x === y) {
-	console.log(x + '=' + y);
+	console.log(x + "=" + y);
 } else {
 	console.log("can't calculate");
 }

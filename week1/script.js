@@ -3,23 +3,22 @@ console.log("Привет мир!" + '\n' +
             "Hello world!");
 
 //2
-console.log("I'm awesome" + "\n" +
-           "or " + 'I\'m awesome');
+console.log("I'm awesome");
 
 //3
 var x;
-console.log('the value of my variable x will be: undefined');
+console.log("the value of my variable x will be: undefined");
 console.log(x);
 x = 8;
-console.log('the value of x will be: 8');
+console.log("the value of x will be: 8");
 console.log(x);
 
 //4
 var y = "string";
-console.log('the value of my variable y will be: string');
+console.log("the value of my variable y will be: string");
 console.log(y);
 y = "secondString";
-console.log('the value of my variable y will be: secondString');
+console.log("the value of my variable y will be: secondString");
 console.log(y);
 
 //5
@@ -30,20 +29,9 @@ console.log(a);
 console.log(Math.max(z, a));
 
 //6
-var animals = [];
-var mypets = [{
-	1: "Cat",
-	2: "Bird",
-	3: "Mouse"
-}];
-var danspets = [{
-	1: 'baby pig'
-}];
-animals.push(mypets, danspets);
+var animals=["cat","dog","mouse"];
+animals.push('baby pig');
 console.log(animals);
-//var animals=['cat','dog','mouse'];
-//animals.push('baby pig');
-//console.log(animals);
 
 //7
 let myString = "this is a test";
@@ -68,27 +56,10 @@ console.log('the value of the variable fourth is: ' + fourth);
 console.log('I think the type of the variable fourth is object.');
 console.log(typeof fourth);
 
-//if (typeof first == typeof second) {
-//    console.log('variables are the same');
-//} else {
-//      console.log('variables are not the same');
-//}
-//var compare = [typeof second];
-//if (compare.indexOf(typeof third) >= 0) {
-//	console.log('variables are the same');
-//} else {
-//	console.log('variables are different');
-//}
-//indexOf() compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator).
-var a = typeof (first);
-var b = typeof (second);
-var c = typeof (third);
-var d = typeof (fourth);
-console.log("Same variables search. Initialization...");
-if ([a].indexOf(b) >= 0){
-  console.log('a & b are the same');
+if (typeof first === typeof second) {
+    console.log('variables are the same');
 } else {
-  console.log('a & b are not the same');
+      console.log('variables are not the same');
 }
 
 //9
